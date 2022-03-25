@@ -8,6 +8,7 @@
 class ArmDrive : public frc2::CommandHelper<frc2::CommandBase, ArmDrive> {
     public:
         explicit ArmDrive(std::function<double()> speed, Arm& arm);
+        void Execute() override;
         void End(bool interrupted) override;
     
     private:

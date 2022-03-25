@@ -9,6 +9,7 @@
 
 #include "subsystems/Drivetrain.h"
 #include "subsystems/Intake.h"
+#include "subsystems/Arm.h"
 
 /**
  * This class is where the bulk of the robot should be declared.  Since
@@ -30,6 +31,7 @@ class RobotContainer {
 
         Drivetrain m_drivetrain;
         Intake m_intake;
+        Arm m_arm;
 
         Autonomous m_autonomousCommand{m_drivetrain};
 
